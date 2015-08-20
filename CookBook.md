@@ -76,96 +76,98 @@ to generate the training data set and the other 30% for the test data set.  The 
 <li>Step 5:  Combined the Subject ID and Activity with the combined test and train dataset.</li>
 <li>Step 6:  Give the each variable descriptive name.</li> 
 </ul>
+<ul>
 	<li>Variable List:</li> 
-	<ol>
-		<li>	Subject 	Subject ID  (1-30)</li>
-		<li>	Activity	Activity Description of the 6 Activities</li>
-		<li>	tBodyAcc-mean()-X	Average Body Acceleration time in X axial</li>
-		<li>	tBodyAcc-mean()-Y	Average Body Acceleration time in Y axial</li>
-		<li>	tBodyAcc-mean()-Z	Average Body Acceleration time in Z axial</li>
-		<li>	tBodyAcc-std()-X	Standard Deviation of Body Acceleration time in X axial</li>
-		<li>	tBodyAcc-std()-Y	Standard Deviation of Body Acceleration time in Y axial</li>
-		<li>	tBodyAcc-std()-Z	Standard Deviation of Body Acceleration time in Z axial</li>
-		<li>	tGravityAcc-mean()-X	Average Gravity Acceleration time in X axial</li>
-		<li> tGravityAcc-mean()-Y	Average Gravity Acceleration time in Y axial</li>
-		<li> tGravityAcc-mean()-Z	Average Gravity Acceleration time in Z axial</li>
-		<li> tGravityAcc-std()-X	Standard Deviation Gravity Acceleration time in X axial</li>
-		<li> tGravityAcc-std()-Y	Standard Deviation Gravity Acceleration time in Y axial</li>
-		<li> tGravityAcc-std()-Z	Standard DeviationGravity Acceleration time in Z axial</li>
-		<li> tBodyAccJerk-mean()-X	Average Body Acceleration Jerk Signal time in X axial</li>
-		<li> tBodyAccJerk-mean()-Y	Average Body Acceleration Jerk Signal time in Y axial</li>
-		<li> tBodyAccJerk-mean()-Z	Average Body Acceleration Jerk Signal time in Z axial</li>
-		<li> tBodyAccJerk-std()-X	Standard Deviation Body Acceleration Jerk Signal time in X axial</li>
-		<li> tBodyAccJerk-std()-Y	Standard Deviation Body Acceleration Jerk Signal time in Y axial</li>
-		<li> tBodyAccJerk-std()-Z	Standard Deviation Body Acceleration Jerk Signal time in Z axial</li>
-		<li> tBodyGyro-mean()-X	Average Body Gyroscope Velocity time in X axial</li>
-		<li> tBodyGyro-mean()-Y	Average Body Gyroscope Velocity time in Y axial</li>
-		<li> tBodyGyro-mean()-Z	Average Body Gyroscope Velocity time in Z axial</li>
-		<li> tBodyGyro-std()-X	Standard Deviation Body Gyroscope Velocity time in X axial</li>
-		<li> tBodyGyro-std()-Y	Standard Deviation Body Gyroscope Velocity time in Y axial</li>
-		<li> tBodyGyro-std()-Z	Standard Deviation Body Gyroscope Velocity time in Z axial</li>
-		<li> tBodyGyroJerk-mean()-X	Average Body Gyroscope Velocity Jerk Signal Time in X axial</li>
-		<li> tBodyGyroJerk-mean()-Y	Average Body Gyroscope Velocity Jerk Signal Time in Y axial</li>
-		<li> tBodyGyroJerk-mean()-Z	Average Body Gyroscope Velocity Jerk Signal Time in Z axial</li>
-		<li> tBodyGyroJerk-std()-X	Standard Deviation Body Gyroscope Velocity Jerk Signal Time in X axial</li>
-		<li> tBodyGyroJerk-std()-Y	Standard Deviation Body Gyroscope Velocity Jerk Signal Time in Y axial</li>
-		<li> tBodyGyroJerk-std()-Z	Standard Deviation Body Gyroscope Velocity Jerk Signal Time in Z axial</li>
-		<li> tBodyAccMag-mean()	Average Body Acceleration Magnitude Time</li>
-		<li> tBodyAccMag-std()	Standard Deviation Body Acceleration Magnitude Time</li>
-		<li> tGravityAccMag-mean()	Average Gravity Acceleration Magnitude Time</li>
-		<li> tGravityAccMag-std()	Standard Deviation Gravity Acceleration Magniture Time</li>
-		<li> tBodyAccJerkMag-mean()	Average Body Acceleration Jerk Signal Magniture Time</li>
-		<li> tBodyAccJerkMag-std()	Standard Deviation Body Acceleration Jerk Signal Magniture Time</li>
-		<li> tBodyGyroMag-mean()	Average Body Gyroscope Velocity Magnitude Time</li>
-		<li> tBodyGyroMag-std()	Standard Deviation Body Gyroscope Velocity Magnitude Time</li>
-		<li> tBodyGyroJerkMag-mean()	Average Body Gyroscope Jerk Signal Magniture Time</li>
-		<li> tBodyGyroJerkMag-std()	Standard Deviation Body Gyroscope Jerk Signal Magniture Time</li>
-		<li> fBodyAcc-mean()-X	Average Body Acceleration frequency in X axial</li>
-		<li> fBodyAcc-mean()-Y	Average Body Acceleration frequency in Y axial</li>
-		<li> fBodyAcc-mean()-Z	Average Body Acceleration frequency in Z axial</li>
-		<li> fBodyAcc-std()-X	Standard Deviation of Body Acceleration frequency in X axial</li>
-		<li> fBodyAcc-std()-Y	Standard Deviation of Body Acceleration frequency in Y axial</li>
-		<li> fBodyAcc-std()-Z	Standard Deviation of Body Acceleration frequency in Z axial</li>
-		<li> fBodyAcc-meanFreq()-X	Mean Frequency of Body Acceleration of Average Weighted X axial</li>
-		<li> fBodyAcc-meanFreq()-Y	Mean Frequency of Body Acceleration of Average Weighted Y axial</li>
-		<li> fBodyAcc-meanFreq()-Z	Mean Frequency of Body Acceleration of Average Weighted Z axial</li>
-		<li> fBodyAccJerk-mean()-X	Average Body Acceleration Jerk Signal frequency in X axial</li>
-		<li> fBodyAccJerk-mean()-Y	Average Body Acceleration Jerk Signal frequency in Y axial</li>
-		<li> fBodyAccJerk-mean()-Z	Average Body Acceleration Jerk Signal frequency in Z axial</li>
-		<li> fBodyAccJerk-std()-X	Standard Deviation Body Acceleration Jerk Signal frequency in X axial</li>
-		<li> fBodyAccJerk-std()-Y	Standard Deviation Body Acceleration Jerk Signal frequency in Y axial</li>
-		<li> fBodyAccJerk-std()-Z	Standard Deviation Body Acceleration Jerk Signal frequency in Z axial</li>
-		<li> fBodyAccJerk-meanFreq()-X	Mean Frequency of Body Acceleration Jerk Signal in X Axial</li>
-		<li> fBodyAccJerk-meanFreq()-Y	Mean Frequency of Body Acceleration Jerk Signal in Y Axial</li>
-		<li> fBodyAccJerk-meanFreq()-Z	Mean Frequency of Body Acceleration Jerk Signal in Z Axial</li>
-		<li> fBodyGyro-mean()-X	Average Body Gyroscope Frequency in X axial</li>
-		<li> fBodyGyro-mean()-Y	Average Body Gyroscope Frequency in Y axial</li>
-		<li> fBodyGyro-mean()-Z	Average Body Gyroscope Frequency in Z axial</li>
-		<li> fBodyGyro-std()-X	Standard Deviation Body Gyroscope Frequency in X axial</li>
-		<li> fBodyGyro-std()-Y	Standard Deviation Body Gyroscope Frequency in Y axial</li>
-		<li> fBodyGyro-std()-Z	Standard Deviation Body Gyroscope Frequency in Z axial</li>
-		<li> fBodyGyro-meanFreq()-X	Mean Frequency of Body Gyroscope Frequency in X axial</li>
-		<li> fBodyGyro-meanFreq()-Y	Mean Frequency of Body Gyroscope Frequency in Y axial</li>
-		<li> fBodyGyro-meanFreq()-Z	Mean Frequency of Body Gyroscope Frequency in Z axial</li>
-		<li> fBodyAccMag-mean()	Standard Deviation Body Acceleration Magnitude frequency</li>
-		<li> fBodyAccMag-std()	Average Body Acceleration Magnitude frequency</li>
-		<li> fBodyAccMag-meanFreq()	Mean Frequency of Body Acceleration Magnitude frequency</li>
-		<li> fBodyBodyAccJerkMag-mean()	Average Body Acceleration Jerk Magniture Frequency</li>
-		<li> fBodyBodyAccJerkMag-std()	Standard Deviation Body Acceleration Jerk Magnitude Frequency</li>
-		<li> fBodyBodyAccJerkMag-meanFreq()	Mean Frequency of Body Acceleration Jerk Magniture Frequency</li>
-		<li> fBodyBodyGyroMag-mean()	Average Body Gyroscope Magnitude frequency</li>
-		<li> fBodyBodyGyroMag-std()	Standard Deviation of Body Gyroscope Magnitude frequency</li>
-		<li> fBodyBodyGyroMag-meanFreq()	Mean Frequency of Body Gyroscope Magnitude frequency</li>
-		<li> fBodyBodyGyroJerkMag-mean()	Average Body Gyroscope Jerk Magnitude frequency</li>
-		<li> fBodyBodyGyroJerkMag-std()	Standard Deviation Body Gyroscope Jerk Magnitude frequency</li>
-		<li> fBodyBodyGyroJerkMag-meanFreq()	Mean Frequency of Body Gyroscrope Jerk Magnitude frequency</li>
-		<li> angle(tBodyAccJerkMean),gravityMean)	Angular Gravity Mean of Body Acceleration Jerk time</li>
-		<li> angle(tBodyGyroMean,gravityMean)	Angular Gravity Mean of Body Gyroscope time</li>
-		<li> angle(tBodyGyroJerkMean,gravityMean)	Angular Gravity Mean of Body Gyroscope Jerk time</li>
-		<li> angle(X,gravityMean)	Angular Gravity Mean in X axial</li>
-		<li> angle(Y,gravityMean)	Angular Gravity Mean in Y axial</li>
-		<li> angle(Z,gravityMean)	Angular Gravity Mean in Z axial</li>
-		</ol>
+</ul>
+	<ul>
+		<li>1 Subject 	Subject ID  (1-30)</li>
+		<li>2 Activity	Activity Description of the 6 Activities</li>
+		<li>3 tBodyAcc-mean()-X	Average Body Acceleration time in X axial</li>
+		<li>4 tBodyAcc-mean()-Y	Average Body Acceleration time in Y axial</li>
+		<li>5 tBodyAcc-mean()-Z	Average Body Acceleration time in Z axial</li>
+		<li>6 tBodyAcc-std()-X	Standard Deviation of Body Acceleration time in X axial</li>
+		<li>7 tBodyAcc-std()-Y	Standard Deviation of Body Acceleration time in Y axial</li>
+		<li>8 tBodyAcc-std()-Z	Standard Deviation of Body Acceleration time in Z axial</li>
+		<li>9 tGravityAcc-mean()-X	Average Gravity Acceleration time in X axial</li>
+		<li>10 tGravityAcc-mean()-Y	Average Gravity Acceleration time in Y axial</li>
+		<li>11 tGravityAcc-mean()-Z	Average Gravity Acceleration time in Z axial</li>
+		<li>12 tGravityAcc-std()-X	Standard Deviation Gravity Acceleration time in X axial</li>
+		<li>13 tGravityAcc-std()-Y	Standard Deviation Gravity Acceleration time in Y axial</li>
+		<li>14 tGravityAcc-std()-Z	Standard DeviationGravity Acceleration time in Z axial</li>
+		<li>15 tBodyAccJerk-mean()-X	Average Body Acceleration Jerk Signal time in X axial</li>
+		<li>16 tBodyAccJerk-mean()-Y	Average Body Acceleration Jerk Signal time in Y axial</li>
+		<li>17 tBodyAccJerk-mean()-Z	Average Body Acceleration Jerk Signal time in Z axial</li>
+		<li>18 tBodyAccJerk-std()-X	Standard Deviation Body Acceleration Jerk Signal time in X axial</li>
+		<li>19 tBodyAccJerk-std()-Y	Standard Deviation Body Acceleration Jerk Signal time in Y axial</li>
+		<li>20 tBodyAccJerk-std()-Z	Standard Deviation Body Acceleration Jerk Signal time in Z axial</li>
+		<li>21 tBodyGyro-mean()-X	Average Body Gyroscope Velocity time in X axial</li>
+		<li>22 tBodyGyro-mean()-Y	Average Body Gyroscope Velocity time in Y axial</li>
+		<li>23 tBodyGyro-mean()-Z	Average Body Gyroscope Velocity time in Z axial</li>
+		<li>24 tBodyGyro-std()-X	Standard Deviation Body Gyroscope Velocity time in X axial</li>
+		<li>25 tBodyGyro-std()-Y	Standard Deviation Body Gyroscope Velocity time in Y axial</li>
+		<li>26 tBodyGyro-std()-Z	Standard Deviation Body Gyroscope Velocity time in Z axial</li>
+		<li>27 tBodyGyroJerk-mean()-X	Average Body Gyroscope Velocity Jerk Signal Time in X axial</li>
+		<li>28 tBodyGyroJerk-mean()-Y	Average Body Gyroscope Velocity Jerk Signal Time in Y axial</li>
+		<li>29 tBodyGyroJerk-mean()-Z	Average Body Gyroscope Velocity Jerk Signal Time in Z axial</li>
+		<li>30 tBodyGyroJerk-std()-X	Standard Deviation Body Gyroscope Velocity Jerk Signal Time in X axial</li>
+		<li>31 tBodyGyroJerk-std()-Y	Standard Deviation Body Gyroscope Velocity Jerk Signal Time in Y axial</li>
+		<li>32 tBodyGyroJerk-std()-Z	Standard Deviation Body Gyroscope Velocity Jerk Signal Time in Z axial</li>
+		<li>33 tBodyAccMag-mean()	Average Body Acceleration Magnitude Time</li>
+		<li>34 tBodyAccMag-std()	Standard Deviation Body Acceleration Magnitude Time</li>
+		<li>35 tGravityAccMag-mean()	Average Gravity Acceleration Magnitude Time</li>
+		<li>36 tGravityAccMag-std()	Standard Deviation Gravity Acceleration Magniture Time</li>
+		<li>37 tBodyAccJerkMag-mean()	Average Body Acceleration Jerk Signal Magniture Time</li>
+		<li>38 tBodyAccJerkMag-std()	Standard Deviation Body Acceleration Jerk Signal Magniture Time</li>
+		<li>39 tBodyGyroMag-mean()	Average Body Gyroscope Velocity Magnitude Time</li>
+		<li>40 tBodyGyroMag-std()	Standard Deviation Body Gyroscope Velocity Magnitude Time</li>
+		<li>41 tBodyGyroJerkMag-mean()	Average Body Gyroscope Jerk Signal Magniture Time</li>
+		<li>42 tBodyGyroJerkMag-std()	Standard Deviation Body Gyroscope Jerk Signal Magniture Time</li>
+		<li>43 fBodyAcc-mean()-X	Average Body Acceleration frequency in X axial</li>
+		<li>44 fBodyAcc-mean()-Y	Average Body Acceleration frequency in Y axial</li>
+		<li>45 fBodyAcc-mean()-Z	Average Body Acceleration frequency in Z axial</li>
+		<li>46 fBodyAcc-std()-X	Standard Deviation of Body Acceleration frequency in X axial</li>
+		<li>47 fBodyAcc-std()-Y	Standard Deviation of Body Acceleration frequency in Y axial</li>
+		<li>48 fBodyAcc-std()-Z	Standard Deviation of Body Acceleration frequency in Z axial</li>
+		<li>49 fBodyAcc-meanFreq()-X	Mean Frequency of Body Acceleration of Average Weighted X axial</li>
+		<li>50 fBodyAcc-meanFreq()-Y	Mean Frequency of Body Acceleration of Average Weighted Y axial</li>
+		<li>51 fBodyAcc-meanFreq()-Z	Mean Frequency of Body Acceleration of Average Weighted Z axial</li>
+		<li>52 fBodyAccJerk-mean()-X	Average Body Acceleration Jerk Signal frequency in X axial</li>
+		<li>53 fBodyAccJerk-mean()-Y	Average Body Acceleration Jerk Signal frequency in Y axial</li>
+		<li>54 fBodyAccJerk-mean()-Z	Average Body Acceleration Jerk Signal frequency in Z axial</li>
+		<li>55 fBodyAccJerk-std()-X	Standard Deviation Body Acceleration Jerk Signal frequency in X axial</li>
+		<li>56 fBodyAccJerk-std()-Y	Standard Deviation Body Acceleration Jerk Signal frequency in Y axial</li>
+		<li>57 fBodyAccJerk-std()-Z	Standard Deviation Body Acceleration Jerk Signal frequency in Z axial</li>
+		<li>58 fBodyAccJerk-meanFreq()-X	Mean Frequency of Body Acceleration Jerk Signal in X Axial</li>
+		<li>59 fBodyAccJerk-meanFreq()-Y	Mean Frequency of Body Acceleration Jerk Signal in Y Axial</li>
+		<li>60 fBodyAccJerk-meanFreq()-Z	Mean Frequency of Body Acceleration Jerk Signal in Z Axial</li>
+		<li>61 fBodyGyro-mean()-X	Average Body Gyroscope Frequency in X axial</li>
+		<li>62 fBodyGyro-mean()-Y	Average Body Gyroscope Frequency in Y axial</li>
+		<li>63 fBodyGyro-mean()-Z	Average Body Gyroscope Frequency in Z axial</li>
+		<li>64 fBodyGyro-std()-X	Standard Deviation Body Gyroscope Frequency in X axial</li>
+		<li>65 fBodyGyro-std()-Y	Standard Deviation Body Gyroscope Frequency in Y axial</li>
+		<li>66 fBodyGyro-std()-Z	Standard Deviation Body Gyroscope Frequency in Z axial</li>
+		<li>67 fBodyGyro-meanFreq()-X	Mean Frequency of Body Gyroscope Frequency in X axial</li>
+		<li>68 fBodyGyro-meanFreq()-Y	Mean Frequency of Body Gyroscope Frequency in Y axial</li>
+		<li>69 fBodyGyro-meanFreq()-Z	Mean Frequency of Body Gyroscope Frequency in Z axial</li>
+		<li>70 fBodyAccMag-mean()	Standard Deviation Body Acceleration Magnitude frequency</li>
+		<li>71 fBodyAccMag-std()	Average Body Acceleration Magnitude frequency</li>
+		<li>72 fBodyAccMag-meanFreq()	Mean Frequency of Body Acceleration Magnitude frequency</li>
+		<li>73 fBodyBodyAccJerkMag-mean()	Average Body Acceleration Jerk Magniture Frequency</li>
+		<li>74 fBodyBodyAccJerkMag-std()	Standard Deviation Body Acceleration Jerk Magnitude Frequency</li>
+		<li>75 fBodyBodyAccJerkMag-meanFreq()	Mean Frequency of Body Acceleration Jerk Magniture Frequency</li>
+		<li>76 fBodyBodyGyroMag-mean()	Average Body Gyroscope Magnitude frequency</li>
+		<li>77 fBodyBodyGyroMag-std()	Standard Deviation of Body Gyroscope Magnitude frequency</li>
+		<li>78 fBodyBodyGyroMag-meanFreq()	Mean Frequency of Body Gyroscope Magnitude frequency</li>
+		<li>79 fBodyBodyGyroJerkMag-mean()	Average Body Gyroscope Jerk Magnitude frequency</li>
+		<li>80 fBodyBodyGyroJerkMag-std()	Standard Deviation Body Gyroscope Jerk Magnitude frequency</li>
+		<li>81 fBodyBodyGyroJerkMag-meanFreq()	Mean Frequency of Body Gyroscrope Jerk Magnitude frequency</li>
+		<li>82 angle(tBodyAccJerkMean),gravityMean)	Angular Gravity Mean of Body Acceleration Jerk time</li>
+		<li>83 angle(tBodyGyroMean,gravityMean)	Angular Gravity Mean of Body Gyroscope time</li>
+		<li>84 angle(tBodyGyroJerkMean,gravityMean)	Angular Gravity Mean of Body Gyroscope Jerk time</li>
+		<li>85 angle(X,gravityMean)	Angular Gravity Mean in X axial</li>
+		<li>86 angle(Y,gravityMean)	Angular Gravity Mean in Y axial</li>
+		<li>87 angle(Z,gravityMean)	Angular Gravity Mean in Z axial</li>
+		</ul>
 
 ##Tidy data set with average of each variable for each activity and each subject.
 <ul>
